@@ -5,7 +5,7 @@ services:
   nginx_load_balancer:
     image: nginx
     volumes:
-      - ./nginx/default.conf:/etc/nginx/nginx.conf
+      - './nginx/default.conf:/etc/nginx/nginx.conf'
     ports:
       - '80:80'
   app1:
